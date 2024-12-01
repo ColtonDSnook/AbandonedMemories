@@ -33,6 +33,5 @@ public class CameraSlide : MonoBehaviour
             cameraTrans.position = Vector3.Lerp(cameraTrans.position, targetPostion, moveSpeed * Time.deltaTime);
             yield return null;
         }
-        cameraTrans.position = targetPostion;
     }
 }

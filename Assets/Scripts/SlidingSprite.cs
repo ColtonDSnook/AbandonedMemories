@@ -15,7 +15,6 @@ public class SlidingSprite : MonoBehaviour
 
     public void ToggleSprite()
     {
-        Debug.Log("ToggleSprite called");
         StopAllCoroutines();
         if (isOnScreen)
         {
@@ -30,7 +29,6 @@ public class SlidingSprite : MonoBehaviour
 
     private IEnumerator SlideSprite(Vector3 targetPosition)
     {
-        Debug.Log("SlideSprite started");
         if (!isOnScreen)
         {
             yield return new WaitForSeconds(delay);
@@ -41,7 +39,5 @@ public class SlidingSprite : MonoBehaviour
             spriteRectTransform.anchoredPosition = Vector3.Lerp(spriteRectTransform.anchoredPosition, targetPosition, slideSpeed * Time.deltaTime);
             yield return null;
         }
-        spriteRectTransform.anchoredPosition = targetPosition;
-        Debug.Log("SlideSprite finished");
     }
 }

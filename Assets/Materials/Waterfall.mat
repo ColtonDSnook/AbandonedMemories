@@ -53,7 +53,7 @@ Material:
     m_Floats:
     - _Alpha: 0
     - _AlphaClip: 0
-    - _BaseTrans: 0.1
+    - _BaseTrans: 0.15
     - _Power: 2.5
     - _QueueControl: 0
     - _QueueOffset: 0
